@@ -38,3 +38,8 @@ ul.groupview, ul.groupview ul {
    display: block;
    float: left;
 }
+
+/* need more space for bigger graphs */
+.container {
+   width: 1250px;
+}
