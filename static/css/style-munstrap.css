@@ -25,16 +25,6 @@ img#zoom_image {
     margin-bottom: 15px;
 }
 
-.link-domain {
-    font-size: 1.4em;
-    color: #660066;
-}
-
-.link-host {
-    font-size: 1.1em;
-    color: #800080;
-}
-
 ul.groupview, ul.groupview ul {
     list-style-type: none;
 }
