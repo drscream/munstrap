@@ -1,11 +1,11 @@
 <TMPL_IF NAME="LARGESET">
-  <div class="btn-group pull-right">
-    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+  <div class="dropdown btn-group float-end mb-3">
+    <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown">
       <TMPL_VAR NAME="INFO_OPTION"> <span class="caret"></span>
     </button>
-    <ul class="dropdown-menu" role="menu">
+    <ul class="dropdown-menu">
       <TMPL_LOOP NAME="PEERS">
-        <li><TMPL_IF NAME="LINK"><a href="<TMPL_VAR NAME="LINK">"><TMPL_ELSE><a href=""></TMPL_IF><TMPL_VAR NAME="NAME"></a></li>
+        <li><TMPL_IF NAME="LINK"><a class="dropdown-item" href="<TMPL_VAR NAME="LINK">"><TMPL_ELSE><a class="dropdown-item" href=""></TMPL_IF><TMPL_VAR NAME="NAME"></a></li>
       </TMPL_LOOP>
     </ul>
   </div>
