@@ -1,25 +1,30 @@
 <TMPL_IF NAME="PATH">
-<ol class="breadcrumb">
-  <TMPL_LOOP NAME="PATH">
-	<li>
-	<TMPL_IF NAME="PATHNAME"> 
-	  <TMPL_IF NAME="PATH"><a href="<TMPL_VAR NAME="PATH">"></TMPL_IF>
-		<TMPL_VAR NAME="PATHNAME">
-	  <TMPL_IF NAME="PATH"></a></TMPL_IF>
-	<TMPL_ELSE>
-	  <a href="<TMPL_VAR NAME="R_PATH">">
-		<span class="glyphicon glyphicon-home"></span> Home
-	  </a>
-	</TMPL_IF>
-	</li>
-  </TMPL_LOOP>
-</ol>
+<nav>
+	<ol class="breadcrumb bg-body-secondary p-3 my-3 rounded-2">
+	<TMPL_LOOP NAME="PATH">
+		<li class="breadcrumb-item">
+		<TMPL_IF NAME="PATHNAME"> 
+		<TMPL_IF NAME="PATH"><a href="<TMPL_VAR NAME="PATH">"></TMPL_IF>
+			<TMPL_VAR NAME="PATHNAME">
+		<TMPL_IF NAME="PATH"></a></TMPL_IF>
+		<TMPL_ELSE>
+		<a class="d-flex align-items-center" href="<TMPL_VAR NAME="R_PATH">">
+			<img src="<TMPL_VAR NAME="R_PATH">/static/icons/house-door-fill.svg" alt="Home" width="16" height="16" class="me-2">
+			Home
+		</a>
+		</TMPL_IF>
+		</li>
+	</TMPL_LOOP>
+	</ol>
+</nav>
 <TMPL_ELSE>
-<ol class="breadcrumb">
-  <a href="<TMPL_VAR NAME="R_PATH">">
-	<span class="glyphicon glyphicon-home"></span> Home
-  </a>
-</ol>
+<nav>
+	<ol class="breadcrumb text-bg-light p-3 m-3 rounded-2">
+	<a class="d-flex align-items-center" href="<TMPL_VAR NAME="R_PATH">">
+		<img src="<TMPL_VAR NAME="R_PATH">/static/icons/house-door-fill.svg" alt="Home" width="16" height="16" class="me-2"> Home
+	</a>
+	</ol>
+</nav>
 </TMPL_IF>
 
 <TMPL_IF NAME="PEERS">

@@ -1,0 +1,36 @@
+html,
+body {
+  height: 100%;
+  font-size: 14px !important;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  text-decoration: underline;
+}
+
+.link-domain {
+  font-size: 1.4em;
+}
+
+.link-host {
+  font-size: 1.1em;
+}
+
+ul.groupview,
+ul.groupview ul {
+  list-style-type: none;
+}
+
+img.img-zoom {
+  cursor: pointer;
+}
+
+img.warn {
+	border: 2px solid #8a6d3b;
+}
